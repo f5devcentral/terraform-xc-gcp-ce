@@ -111,17 +111,8 @@ variable "gcp_existing_network_slo" {
   type        = string
 }
 
-variable "gcp_existing_network_sli" {
-  description = "existing gcp network name sli"
-  type        = string
-}
 
 variable "gcp_existing_subnet_network_slo" {
   description = "existing gcp subnetwork name slo"
-  type        = string
-}
-
-variable "gcp_existing_subnet_network_sli" {
-  description = "existing gcp subnetwork name sli"
   type        = string
 }
