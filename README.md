@@ -98,6 +98,8 @@ Description of available input variables. Used input variables will change per t
 | Three Node Cluster Single NIC existing VPC / subnet                         | [Description](examples/three_node_cluster_single_nic_existing_vpc_existing_subnet/README.md)      |
 | Three Node Cluster Multi NIC new VPC / subnet                               | [Description](examples/three_node_cluster_multi_nic_new_vpc_new_subnet/README.md)                 |
 | Three Node Cluster Multi NIC existing VPC / new subnet                      | [Description](examples/three_node_cluster_multi_nic_existing_vpc_new_subnet/README.md)            |
+| Three Node Single NIC existing VPC / subnet and 3rd party NAT GW            | [Description](examples/three_node_single_nic_existing_vpc_and_subnet_3rd_party_nat_gw/README.md)  |
+| Three Node Multi NIC existing VPC / subnet and 3rd party NAT GW             | [Description](examples/three_node_multi_nic_existing_vpc_and_subnet_3rd_party_nat_gw/README.md)   |
 | Three Node AppStack Cluster new VPC / subnet                                | [Description](examples/three_node_cluster_appstack_new_vpc_new_subnet/README.md)                  |
 | Three Node AppStack Cluster existing VPC / new subnet                       | [Description](examples/three_node_cluster_appstack_existing_vpc_new_subnet/README.md)             |
 
