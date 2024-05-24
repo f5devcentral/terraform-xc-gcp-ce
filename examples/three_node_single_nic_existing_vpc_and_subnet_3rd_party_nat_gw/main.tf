@@ -19,9 +19,7 @@ module "f5xc_gcp_cloud_ce_three_node_single_nic_existing_vpc_and_subnet_3rd_part
   gcp_instance_image              = var.gcp_instance_image
   gcp_instance_disk_size          = var.gcp_instance_disk_size
   gcp_existing_network_slo        = var.gcp_existing_network_slo
-  gcp_existing_network_sli        = var.gcp_existing_network_sli
   gcp_existing_subnet_network_slo = var.gcp_existing_subnet_network_slo
-  gcp_existing_subnet_network_sli = var.gcp_existing_subnet_network_sli
   f5xc_tenant                     = var.f5xc_tenant
   f5xc_api_url                    = var.f5xc_api_url
   f5xc_namespace                  = var.f5xc_namespace
@@ -30,6 +28,8 @@ module "f5xc_gcp_cloud_ce_three_node_single_nic_existing_vpc_and_subnet_3rd_part
   f5xc_cluster_name               = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file               = var.f5xc_api_p12_file
   f5xc_ce_gateway_type            = var.f5xc_ce_gateway_type
+  f5xc_cluster_latitude           = var.f5xc_cluster_latitude
+  f5xc_cluster_longitude          = var.f5xc_cluster_longitude
   f5xc_api_p12_cert_password      = var.f5xc_api_p12_cert_password
   f5xc_ce_nodes = {
     node0 = {
