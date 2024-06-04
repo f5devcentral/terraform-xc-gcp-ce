@@ -1,4 +1,4 @@
-# Example Single node multi NIC existing VPC and existing subnet with SLO no EIP and GCP compute router NAT
+# Example Single node multi NIC existing VPC and existing subnet with SLO no PIP and GCP compute router NAT
 
 This example instantiates:
 
