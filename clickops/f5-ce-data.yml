@@ -1,7 +1,6 @@
 #cloud-config
 #Only values to be inserted are token and cluster name. Insert as is without parenthesis
 write_files:
-#ves
 - path: /etc/hosts
   content: |
     # IPv4 and IPv6 localhost aliases
@@ -16,8 +15,8 @@ write_files:
   owner: root
   content: |
     Vpm:
-      ClusterName: #### TO BE REPLACED WITH CLUSTER NAME #### 
       ClusterType: ce
+      ClusterName: #### TO BE REPLACED BY THE F5XC SECURE MESH SITE NAME ####
       Token: #### TO BE REPLACED BY F5XC API TOKEN ####
       MauricePrivateEndpoint: https://register-tls.ves.volterra.io
       MauriceEndpoint: https://register.ves.volterra.io
@@ -25,3 +24,4 @@ write_files:
     Kubernetes:
       EtcdUseTLS: True
       Server: vip
+      CloudProvider: disabled
