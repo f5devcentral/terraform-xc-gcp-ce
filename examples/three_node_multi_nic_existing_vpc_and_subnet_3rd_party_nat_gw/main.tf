@@ -18,6 +18,7 @@ module "f5xc_gcp_cloud_ce_three_node_multi_nic_existing_vpc_and_subnet_3rd_party
   gcp_instance_type               = var.gcp_instance_type
   gcp_instance_image              = var.gcp_instance_image
   gcp_instance_disk_size          = var.gcp_instance_disk_size
+  f5xc_sms_provider_name          = "gcp"
   gcp_existing_network_slo        = var.gcp_existing_network_slo
   gcp_existing_network_sli        = var.gcp_existing_network_sli
   gcp_existing_subnet_network_slo = var.gcp_existing_subnet_network_slo
@@ -44,6 +45,7 @@ module "f5xc_gcp_cloud_ce_three_node_multi_nic_existing_vpc_and_subnet_3rd_party
   }
   providers = {
     google   = google.default
+    restful  = restful.default
     volterra = volterra.default
   }
 }
