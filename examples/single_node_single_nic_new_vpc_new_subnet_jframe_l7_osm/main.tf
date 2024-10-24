@@ -18,7 +18,6 @@ module "f5xc_gcp_cloud_ce_single_node_single_nic_new_vpc_new_subnet_jframe_l7_os
   gcp_instance_type                      = var.gcp_instance_type
   gcp_instance_image                     = var.gcp_instance_image
   gcp_instance_disk_size                 = var.gcp_instance_disk_size
-  f5xc_sms_provider_name                 = "gcp"
   f5xc_tenant                            = var.f5xc_tenant
   f5xc_api_url                           = var.f5xc_api_url
   f5xc_namespace                         = var.f5xc_namespace
@@ -28,7 +27,9 @@ module "f5xc_gcp_cloud_ce_single_node_single_nic_new_vpc_new_subnet_jframe_l7_os
   f5xc_api_p12_file                      = var.f5xc_api_p12_file
   f5xc_ce_slo_subnet                     = var.f5xc_ce_slo_subnet
   f5xc_ce_gateway_type                   = var.f5xc_ce_gateway_type
+  f5xc_sms_provider_name                 = "gcp"
   f5xc_api_p12_cert_password             = var.f5xc_api_p12_cert_password
+  f5xc_secure_mesh_site_version          = var.f5xc_secure_mesh_site_version
   f5xc_ce_performance_enhancement_mode   = var.f5xc_ce_performance_enhancement_mode
   f5xc_enable_offline_survivability_mode = var.f5xc_enable_offline_survivability_mode
   f5xc_ce_nodes = {

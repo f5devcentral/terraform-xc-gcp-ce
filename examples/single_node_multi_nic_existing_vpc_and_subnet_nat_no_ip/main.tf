@@ -18,7 +18,6 @@ module "f5xc_gcp_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_no_e
   gcp_instance_type               = var.gcp_instance_type
   gcp_instance_image              = var.gcp_instance_image
   gcp_instance_disk_size          = var.gcp_instance_disk_size
-  f5xc_sms_provider_name          = "gcp"
   gcp_existing_network_slo        = var.gcp_existing_network_slo
   gcp_existing_network_sli        = var.gcp_existing_network_sli
   gcp_existing_subnet_network_slo = var.gcp_existing_subnet_network_slo
@@ -31,9 +30,11 @@ module "f5xc_gcp_cloud_ce_single_node_multi_nic_existing_vpc_and_subnet_nat_no_e
   f5xc_cluster_name               = format("%s-%s-%s", var.project_prefix, var.f5xc_cluster_name, var.project_suffix)
   f5xc_api_p12_file               = var.f5xc_api_p12_file
   f5xc_ce_gateway_type            = var.f5xc_ce_gateway_type
+  f5xc_sms_provider_name          = "gcp"
   f5xc_is_private_cloud_ce        = true
   f5xc_private_ce_nat_name        = "${var.project_prefix}-${var.f5xc_cluster_name}-nat-config-${var.gcp_region}-${var.project_suffix}"
   f5xc_api_p12_cert_password      = var.f5xc_api_p12_cert_password
+  f5xc_secure_mesh_site_version   = var.f5xc_secure_mesh_site_version
   f5xc_private_ce_nat_router_name = "${var.project_prefix}-${var.f5xc_cluster_name}-nat-router-${var.gcp_region}-${var.project_suffix}"
   f5xc_ce_nodes = {
     node0 = {
